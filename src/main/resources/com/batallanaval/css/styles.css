@@ -1,0 +1,387 @@
+/**
+BATALLA NAVAL — Hoja de Estilos Principal
+Tema: Naval Oscuro con acentos de neón cian
+ */
+
+/**
+PALETA DE COLORES:
+Primary:    #0A1628  (Deep Navy)
+Secondary:  #1B2A4A  (Dark Blue)
+Accent:     #00D4FF  (Cyan Glow)
+Highlight:  #FF6B35  (Orange Fire)
+Success:    #00E676  (Green)
+Danger:     #FF1744  (Red)
+Surface:    #162038  (Cards/Cells)
+Text:       #E8EAF0  (Light)
+Muted:      #8899AA  (Secondary text)
+ */
+
+{
+    -fx-font-family: 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.pantalla-inicio,
+.pantalla-colocacion,
+.pantalla-juego {
+    -fx-background-color: linear-gradient(to bottom, #0A1628, #0D1F3C, #0A1628);
+}
+
+.popup-enemigo {
+    -fx-background-color: linear-gradient(to bottom, #0A1628, #1B2A4A);
+}
+
+.titulo-principal {
+    -fx-font-size: 42px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00D4FF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 212, 255, 0.4), 15, 0, 0, 0);
+}
+
+.subtitulo {
+    -fx-font-size: 18px;
+    -fx-text-fill: #8899AA;
+}
+
+.titulo-pantalla {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00D4FF;
+}
+
+.popup-titulo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00D4FF;
+}
+
+.leyenda-texto {
+    -fx-font-size: 13px;
+    -fx-text-fill: #B0BEC5;
+}
+
+.label-form {
+    -fx-font-size: 16px;
+    -fx-text-fill: #B0BEC5;
+}
+
+.label-seccion {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E8EAF0;
+}
+
+.info-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #8899AA;
+}
+
+.orientacion-text {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00E676;
+}
+
+.nickname-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00D4FF;
+}
+
+.turno-label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD740;
+}
+
+.turno-jugador {
+    -fx-text-fill: #00E676;
+}
+
+.turno-enemigo {
+    -fx-text-fill: #FF6B35;
+}
+
+.info-barcos {
+    -fx-font-size: 14px;
+    -fx-text-fill: #B0BEC5;
+}
+
+.tablero-titulo {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E8EAF0;
+}
+
+.estado-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFD740;
+}
+
+.panel-titulo {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #E8EAF0;
+}
+
+.barco-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #B0BEC5;
+}
+
+.placeholder-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: #556677;
+}
+
+.input-nickname {
+    -fx-background-color: #1B2A4A;
+    -fx-text-fill: #E8EAF0;
+    -fx-prompt-text-fill: #556677;
+    -fx-border-color: #2A3F6A;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10 15 10 15;
+    -fx-font-size: 15px;
+}
+
+.input-nickname:focused {
+    -fx-border-color: #00D4FF;
+    -fx-effect: dropshadow(gaussian, rgba(0, 212, 255, 0.3), 10, 0, 0, 0);
+}
+
+.btn-primario {
+    -fx-background-color: linear-gradient(to right, #00B4D8, #00D4FF);
+    -fx-text-fill: #0A1628;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 212, 255, 0.3), 8, 0, 0, 2);
+}
+
+.btn-primario:hover {
+    -fx-background-color: linear-gradient(to right, #00D4FF, #48E5FF);
+    -fx-effect: dropshadow(gaussian, rgba(0, 212, 255, 0.5), 12, 0, 0, 3);
+}
+
+.btn-primario:pressed {
+    -fx-background-color: #0090A8;
+}
+
+.btn-primario:disabled {
+    -fx-background-color: #2A3F6A;
+    -fx-text-fill: #556677;
+    -fx-opacity: 0.7;
+}
+
+.btn-secundario {
+    -fx-background-color: #1B2A4A;
+    -fx-text-fill: #00D4FF;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-border-color: #00D4FF;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-cursor: hand;
+}
+
+.btn-secundario:hover {
+    -fx-background-color: #1E3358;
+    -fx-effect: dropshadow(gaussian, rgba(0, 212, 255, 0.3), 8, 0, 0, 2);
+}
+
+.btn-accion {
+    -fx-background-color: #162038;
+    -fx-text-fill: #E8EAF0;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #2A3F6A;
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-accion:hover {
+    -fx-background-color: #1E3358;
+    -fx-border-color: #00D4FF;
+    -fx-text-fill: #00D4FF;
+}
+
+.btn-verificar {
+    -fx-background-color: #1B2A4A;
+    -fx-text-fill: #FFD740;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #FFD740;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-verificar:hover {
+    -fx-background-color: #2A3F4A;
+    -fx-effect: dropshadow(gaussian, rgba(255, 215, 64, 0.3), 8, 0, 0, 2);
+}
+
+.tablero {
+    -fx-background-color: #0D1F3C;
+    -fx-padding: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 15, 0, 0, 3);
+}
+
+.header-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00D4FF;
+    -fx-alignment: CENTER;
+}
+
+.celda {
+    -fx-border-color: #1B2A4A;
+    -fx-border-width: 1;
+    -fx-cursor: hand;
+}
+
+.celda-vacia {
+    -fx-background-color: #162038;
+}
+
+.celda-vacia:hover {
+    -fx-background-color: #1E3358;
+}
+
+.celda-barco {
+    -fx-background-color: #1B3A5C;
+    -fx-border-color: #2A5F8A;
+}
+
+.celda-agua {
+    -fx-background-color: #0D47A1;
+    -fx-border-color: #1565C0;
+}
+
+.celda-tocado {
+    -fx-background-color: #E65100;
+    -fx-border-color: #FF6D00;
+    -fx-effect: dropshadow(gaussian, rgba(255, 109, 0, 0.4), 5, 0, 0, 0);
+}
+
+.celda-hundido {
+    -fx-background-color: #B71C1C;
+    -fx-border-color: #D32F2F;
+    -fx-effect: dropshadow(gaussian, rgba(211, 47, 47, 0.4), 5, 0, 0, 0);
+}
+
+.celda-enemigo {
+    -fx-background-color: #1A1A2E;
+}
+
+.celda-enemigo:hover,
+.celda-hover {
+    -fx-background-color: #2A2A4E;
+    -fx-border-color: #00D4FF;
+}
+
+.celda-preview-valido {
+    -fx-background-color: rgba(0, 230, 118, 0.35);
+    -fx-border-color: #00E676;
+    -fx-border-width: 2;
+}
+
+.celda-preview-invalido {
+    -fx-background-color: rgba(255, 23, 68, 0.35);
+    -fx-border-color: #FF1744;
+    -fx-border-width: 2;
+}
+
+.panel-barcos {
+    -fx-background-color: #0D1F3C;
+    -fx-border-color: #1B2A4A;
+    -fx-border-width: 0 0 0 2;
+}
+
+.barco-item {
+    -fx-background-color: #162038;
+    -fx-background-radius: 8;
+    -fx-border-color: #2A3F6A;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+}
+
+.barco-item:hover {
+    -fx-background-color: #1E3358;
+    -fx-border-color: #00D4FF;
+}
+
+.barco-seleccionado {
+    -fx-background-color: #1B3A5C;
+    -fx-border-color: #00D4FF;
+    -fx-border-width: 2;
+    -fx-effect: dropshadow(gaussian, rgba(0, 212, 255, 0.4), 8, 0, 0, 0);
+}
+
+.tabla-stats {
+    -fx-background-color: #0D1F3C;
+    -fx-border-color: #1B2A4A;
+}
+
+.tabla-stats .column-header-background {
+    -fx-background-color: #1B2A4A;
+}
+
+.tabla-stats .column-header .label {
+    -fx-text-fill: #00D4FF;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.tabla-stats .table-row-cell {
+    -fx-background-color: #162038;
+    -fx-border-color: #1B2A4A;
+}
+
+.tabla-stats .table-row-cell:odd {
+    -fx-background-color: #0D1F3C;
+}
+
+.tabla-stats .table-row-cell:selected {
+    -fx-background-color: #1B3A5C;
+}
+
+.tabla-stats .table-cell {
+    -fx-text-fill: #E8EAF0;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER;
+}
+
+.separator .line {
+    -fx-border-color: #2A3F6A;
+    -fx-border-width: 1 0 0 0;
+}
+
+.scroll-bar {
+    -fx-background-color: #0D1F3C;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #2A3F6A;
+    -fx-background-radius: 5;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #3A5F8A;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-background-color: #2A3F6A;
+}

@@ -3,6 +3,6 @@ module com.batallanaval.batallanaval {
     requires javafx.fxml;
 
 
-    opens com.batallanaval.batallanaval to javafx.fxml;
-    exports com.batallanaval.batallanaval;
+    opens com.batallanaval to javafx.fxml;
+    exports com.batallanaval;
 }

@@ -1,4 +1,4 @@
-package com.batallanaval;
+package com.batallaNaval;
 
 import javafx.application.Application;
 import javafx.stage.Stage;

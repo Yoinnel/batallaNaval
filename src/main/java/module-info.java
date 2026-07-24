@@ -1,8 +1,8 @@
-module com.batallanaval.batallanaval {
+module com.batallaNaval.batallanaval {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.batallanaval to javafx.fxml;
-    exports com.batallanaval;
+    opens com.batallaNaval to javafx.fxml;
+    exports com.batallaNaval;
 }

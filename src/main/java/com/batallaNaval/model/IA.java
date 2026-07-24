@@ -85,7 +85,6 @@ public class IA implements Serializable {
         }
     }
 
-
     public EstrategiaDisparo getEstrategia() {
         return estrategia;
     }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="650" prefWidth="900" styleClass="pantalla-inicio" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.batallaNaval.controller.InicioController">
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <padding>
+                <Insets bottom="30" left="50" right="50" top="30" />
+            </padding>
+            <Label fx:id="lblTitulo" styleClass="titulo-principal" text="BATALLA NAVAL" />
+            <Label styleClass="subtitulo" text="Jugador vs Computador" />
+            <Separator prefWidth="400" />
+            <VBox alignment="CENTER" spacing="10">
+                <Label styleClass="label-form" text="Ingresa tu nickname:" />
+                <TextField fx:id="txtNickname" maxWidth="300" promptText="Tu nombre de guerra..." styleClass="input-nickname" />
+            </VBox>
+            <HBox alignment="CENTER" spacing="20">
+                <padding>
+                    <Insets top="10" />
+                </padding>
+                <Button fx:id="btnNuevaPartida" onAction="#onNuevaPartida" prefHeight="45" prefWidth="200" styleClass="btn-primario" text="Nueva Partida" />
+                <Button fx:id="btnCargarPartida" onAction="#onCargarPartida" prefHeight="45" prefWidth="200" styleClass="btn-secundario" text="Cargar Partida" />
+            </HBox>
+            <Separator prefWidth="400" />
+            <Label styleClass="label-seccion" text="Estadísticas" />
+            <TableView fx:id="tablaEstadisticas" prefHeight="200" prefWidth="600" styleClass="tabla-stats">
+                <columns>
+                    <TableColumn fx:id="colNickname" prefWidth="200.0" text="Jugador" />
+                    <TableColumn fx:id="colJugadas" prefWidth="200.0" text="Jugadas" />
+                    <TableColumn fx:id="colGanadas" prefWidth="200.0" text="Ganadas" />
+                    <TableColumn fx:id="colPerdidas" prefWidth="200.0" text="Perdidas" />
+                </columns>
+                <placeholder>
+                    <Label styleClass="placeholder-text" text="Sin estadísticas registradas" />
+                </placeholder>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

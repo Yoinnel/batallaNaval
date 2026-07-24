@@ -16,6 +16,7 @@ import javafx.stage.Stage;
  *<p>
  * @version 1.0
  * @since 2026
+
  */
 
 // Esta clase se encarga de crear la ventana principal del juego con un tamaño inicial de 1280 x 720 pixeles.

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.batallaNaval.controller.JuegoController" styleClass="pantalla-juego" prefWidth="1100" prefHeight="750">
+    <top>
+        <VBox alignment="CENTER" spacing="5">
+            <padding>
+                <Insets top="10" bottom="5" left="20" right="20"/>
+            </padding>
+            <Label fx:id="lblNickname" text="Jugador:" styleClass="nickname-label"/>
+            <Label fx:id="lblTurno" text="Tu turno" styleClass="turno-label"/>
+            <HBox alignment="CENTER" spacing="40">
+                <Label fx:id="lblInfoJugador" text="Tus barcos: 10 restantes" styleClass="info-barcos"/>
+                <Label fx:id="lblInfoEnemigo" text="Barcos enemigos: 10 restantes" styleClass="info-barcos"/>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <HBox alignment="CENTER" spacing="40">
+            <padding>
+                <Insets top="10" bottom="10" left="20" right="20"/>
+            </padding>
+            <VBox alignment="CENTER" spacing="8">
+                <Label text="Tu Tablero" styleClass="tablero-titulo"/>
+                <GridPane fx:id="gridJugador" alignment="CENTER" hgap="1" vgap="1" styleClass="tablero"/>
+            </VBox>
+            <VBox alignment="CENTER" spacing="8">
+                <Label text="Tablero Enemigo" styleClass="tablero-titulo"/>
+                <GridPane fx:id="gridEnemigo" alignment="CENTER" hgap="1" vgap="1" styleClass="tablero tablero-atacar"/>
+            </VBox>
+        </HBox>
+    </center>
+    <bottom>
+        <VBox alignment="CENTER" spacing="8">
+            <padding>
+                <Insets top="5" bottom="15" left="20" right="20"/>
+            </padding>
+            <Label fx:id="lblEstado" text="Haz clic en el tablero enemigo para disparar" styleClass="estado-label"/>
+            <HBox alignment="CENTER" spacing="15">
+                <Button fx:id="btnGuardar" text="Guardar Partida" onAction="#onGuardar" styleClass="btn-secundario" prefWidth="200" prefHeight="40"/>
+                <Button fx:id="btnSalir" text="Salir de la partida" onAction="#onSalir" styleClass="btn-secundario" prefWidth="200" prefHeight="40"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>

@@ -1,4 +1,4 @@
-package model;
+package com.batallaNaval.model;
 
 import com.batallaNaval.exceptions.BarcoSuperpuestoException;
 import com.batallaNaval.exceptions.CasillaYaDisparadaException;

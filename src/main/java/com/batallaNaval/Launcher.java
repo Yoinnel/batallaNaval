@@ -1,4 +1,4 @@
-package com.batallanaval;
+package com.batallaNaval;
 
 import javafx.application.Application;
 

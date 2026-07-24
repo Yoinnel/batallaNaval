@@ -1,5 +1,6 @@
 package com.batallaNaval;
 
+import com.batallaNaval.util.NavegadorVistas;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
@@ -21,6 +22,7 @@ import javafx.stage.Stage;
 
 // Esta clase se encarga de crear la ventana principal del juego con un tamaño inicial de 1280 x 720 pixeles.
 
+
 public class Main extends Application {
 
     @Override
@@ -28,6 +30,9 @@ public class Main extends Application {
         primaryStage.setMinWidth(1280);
         primaryStage.setMinHeight(720);
         primaryStage.setResizable(true);
+        NavegadorVistas.setStage(primaryStage);
+        NavegadorVistas.irAInicio();
         primaryStage.show();
+
     }
 }
